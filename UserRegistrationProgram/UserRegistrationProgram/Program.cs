@@ -9,16 +9,17 @@
 
             UserRegister userRegister = new UserRegister();
 
-            Console.WriteLine("Enter the EmailID: ");
-            string Email = Console.ReadLine();
+            Console.WriteLine("Enter the Password: ");
 
-            if (userRegister.validateEmailID(Email))
+            string passWord = Console.ReadLine();
+
+            if (userRegister.validatePassword(passWord))
             {
-                Console.WriteLine("Pattern Match");
+                Console.WriteLine("Password is valid");
             }
             else
             {
-                Console.WriteLine("Pattern not Match");
+                Console.WriteLine("Password is not valid");
             }
         }
     }
